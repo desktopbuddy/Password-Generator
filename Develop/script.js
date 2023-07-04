@@ -7,8 +7,19 @@ function generatePassword() {
   if (passwordLength < 8 || passwordLength > 128) {
     alert("Password must be 8 to 128 characters long.")
   } else {
-    // Name of lowercase variable
+    var hasLowerCase = confirm("Would you like lowercase letters in your password?");
+    var hasUpperCase = confirm("Would you like uppercase letters in your password?");
+    var hasNumeric = confirm("Would you like numbers in your password?");
+    var hasSpecialCharacter = confirm("Would you like special characters in your password?");
+
+    console.log(passwordLength);
+    console.log(hasLowerCase);
+    console.log(hasUpperCase);
+    console.log(hasNumeric);
+    console.log(hasSpecialCharacter);
   }
+}
+
 
 
 // Write password to the #password input
